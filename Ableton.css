@@ -52,7 +52,7 @@ img{
     text-align: center;
 }
 
-.history{
+.styled{
     font-size: 12px;
     font-family: 'Arial Narrow', Arial, sans-serif;   
 }
@@ -61,7 +61,8 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: auto;
-    height: 400px;
+    height: auto;
+    padding: 10px;
     position: relative;
 
 }
@@ -77,11 +78,23 @@ img{
     z-index: -1;
 }
 
+.photoes_2::after{
+    right: auto;
+    left: 0;
+    width: 55%;
+    height: 100%;
+}
+
+
 .photoes_content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+
+.space{
+    padding: 20px;
 }
 
 .video{
